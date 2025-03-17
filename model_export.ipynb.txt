@@ -1,0 +1,10 @@
+!pip install ultralytics
+!pip install "sng4onnx>=1.0.1" "onnx_graphsurgeon>=0.3.26" "onnx>=1.17.0" "onnx2tf>1.17.5,<=1.26.3" "onnxslim>=0.1.31" "tflite_support" "onnxruntime"  "protobuf"
+
+from ultralytics import YOLO
+
+# Load a model
+model = YOLO("yolo11s.pt")
+
+# Export the model
+model.export(format="tfjs", nms=True)
