@@ -15,7 +15,6 @@ export const renderBoxes = (canvasRef, boxes_data, scores_data, classes_data, ra
 
   // font configs
   const font = `${Math.max(Math.round(Math.max(ctx.canvas.width, ctx.canvas.height) / 60), 12)}px Arial`;
-  console.log(font);
   ctx.font = font;
   ctx.textBaseline = "top";
 
